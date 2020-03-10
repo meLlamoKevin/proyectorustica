@@ -1,0 +1,188 @@
+/* css affichage principal */
+* {
+    margin: 0%;
+}
+
+body {
+    display: flex;
+    width: screen;
+}
+
+#main {
+    width: 70%;
+    background-color: rgba(243, 233, 202, 0.911);
+    margin: auto;
+}
+
+/* css publicités */
+aside {
+  background-color: coral;
+  width: 15%;
+  margin: 0%;
+}
+
+#pub {
+    width: 90%;
+    padding: 5%;
+}
+
+/* css décoration images + logos */
+.png {
+    width: 50px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+#logoin {
+    border-radius: 5px;
+}
+
+#yt {
+    border-radius: 5px;
+}
+
+/* css header-top + header */
+header {
+    padding: 1%;
+    text-align: center;
+    height: 8%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,66,29,0.4) 50%, rgba(252,176,69,1) 100%);
+    box-shadow: 0px 5px 10px #888888a9;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150%;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(67, 71, 72);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#ulsocial {
+    display: flex;
+    margin-left: auto;
+}
+
+#ulmention {
+    display:flex;
+}
+
+#ulmention>li:hover {
+    font-size: 110%;
+    color: coral;
+}
+
+#header-top>ul>li {
+    margin-right: 25px;
+}
+
+/* css section principal (texte) */
+#text {
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article>h3 {
+    margin: 30px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 200%;
+}
+
+article>p {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+
+#text {
+    line-height: 24px;
+}
+
+/* css footer */
+footer {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(67, 71, 72);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>section {
+    margin-top: 30px;
+}
+
+#imgcamargue {
+    width: 110px;
+    height: 110px;
+    border-radius: 50px;
+}
+
+/* css pour responsive smartphone */
+@media screen and (max-width: 1100px) {
+
+    aside {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    header {
+        font-size: 300%;
+    }
+
+    #header-top {
+        padding: 15px;        
+    }
+
+    #header-top>ul>li {
+        margin-right: 15px;
+        font-size: 150%;       
+    }
+
+    #ulmention>li:hover {
+        font-size: 150%;
+        color: coral;
+    }
+
+    #text {
+        font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        line-height: 10px;
+        margin-top: 1%;
+        font-size: 150%;
+    }
+
+    footer>section>p {
+        text-align: center;
+    }
+
+    .logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .png {
+        width: 65px;
+    }
+}
